@@ -14,6 +14,7 @@ The repository thus contains the following folders:
 
 Please check the following repository for further details about the use of the developed resoning capabilities within ROS.
 
-- https://github.com/pstlab/sharework_knowledge.git
+- Sharework Knowledge Module:     https://github.com/pstlab/sharework_knowledge.git
+- Sharework Task Planner Module:  https://github.com/pstlab/sharework_taskplanner.git 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------
