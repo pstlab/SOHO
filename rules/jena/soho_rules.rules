@@ -6,3 +6,24 @@
 
 @include <owlmicro>.
 
+
+[observable-features:
+	(?o rdf:type soho:ProductionObject), (?o dul:hasQuality ?p), (?s rdf:type ssn:Sensor), 
+	(?s ssn:observers ?p), makeTemp(?x)
+	->
+	(?x rdf:type soho:ObservableFeature), (?x dul:isRoleOf ?o), (?x soho:hasObservableProperty ?p), 
+	(?x soho:isObservableThrough ?s)]
+
+
+[targets-capabilities:
+	(?o rdf:type soho:ProductionObject), (?f rdf:type soho:Function), (?a rdf:type dul:Agent), 
+	(?o dul:hasQuality ?q), (?f soho:hasEffectOn ?q), (?a soho:hasCapability ?c), 
+	(?f soho:requiresCapability ?c)
+	-> 
+	(?f soho:hasTarget ?o), (?f soho:canBePerformedBy ?a)]	
+
+[task-target:
+	(?t rdf:type soho:SimpleTask), (?t dul:hasConstituent ?o), (?t dul:hasConstituent ?f), 
+	(?o rdf:type soho:ProductionObject), (?f rdf:type soho:Function)
+	-> 
+	(?f soho:hasTarget ?o)]
