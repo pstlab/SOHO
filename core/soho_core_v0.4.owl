@@ -772,20 +772,6 @@
     
 
 
-    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#Autonomy -->
-
-    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#Autonomy">
-        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotBehavior"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
-                <owl:someValuesFrom rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#AutonomyLevel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#AutonomyLevel -->
 
     <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#AutonomyLevel">
@@ -877,7 +863,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality"/>
-                <owl:someValuesFrom rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#Autonomy"/>
+                <owl:someValuesFrom rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotAutonomy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1431,6 +1417,13 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#describes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HRCTask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2245,6 +2238,20 @@
     
 
 
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotAutonomy -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotAutonomy">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotBehavior"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"/>
+                <owl:someValuesFrom rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#AutonomyLevel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotBehavior -->
 
     <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotBehavior">
@@ -2304,6 +2311,14 @@
     
 
 
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotPerformance -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotPerformance">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotBehavior"/>
+    </owl:Class>
+    
+
+
     <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotPrecision -->
 
     <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotPrecision">
@@ -2338,6 +2353,22 @@
 
     <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotSpeed">
         <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotTaskAccuracy -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotTaskAccuracy">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotTaskPerformance -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotTaskPerformance">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotPerformance"/>
     </owl:Class>
     
 
@@ -2394,6 +2425,50 @@
 
     <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#SensingCapability">
         <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#Sequential -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#Sequential">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#InteractionModality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#constrains"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HumanFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#constrains"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#describes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HRCTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#SequentialHRCTask -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#SequentialHRCTask">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HRCTask"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#Sequential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2528,6 +2603,20 @@
                 <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#describes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HRCTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#PrecedenceConstraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2611,6 +2700,13 @@
                 <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotFunction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#describes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HRCTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2624,43 +2720,6 @@
                 <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#Supportive"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#Synchronous -->
-
-    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#Synchronous">
-        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#InteractionModality"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#constrains"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HumanFunction"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#constrains"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#RobotFunction"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#SynchronousHRCTask -->
-
-    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#SynchronousHRCTask">
-        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#HRCTask"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#Synchronous"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2813,6 +2872,30 @@
                 <owl:allValuesFrom rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#ExpertiseLevel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerPerformance -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerPerformance">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerTaskAccuracy -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerTaskAccuracy">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerTaskPerformance -->
+
+    <owl:Class rdf:about="http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerTaskPerformance">
+        <rdfs:subClassOf rdf:resource="http://pst.istc.cnr.it/ontologies/2019/01/soho#WorkerPerformance"/>
     </owl:Class>
     
 
@@ -2973,18 +3056,6 @@
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -2994,10 +3065,16 @@
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -3024,7 +3101,10 @@
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -3033,16 +3113,19 @@
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
