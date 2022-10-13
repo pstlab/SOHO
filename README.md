@@ -13,6 +13,14 @@ The repository thus contains the following folders:
 
 ## Publications
 
+### 2022
+
+- Umbrico A., Cesta A., Orlandini A., "Enhancing Awareness of Industrial Robots in Collaborative Manufacturing", Semant Web Journal. (UNDER REVIEW)
+
+- Umbrico A., Orlandini A., Cesta A., Faroni M., Beschi M., Pedrocchi N., Scala A., Tavormina P., Koukas S., Zalonis A., Fourtakas N., Stylianos Kotsaris P.,  Andronas D., Makris S., "Design of Advanced Human-Robot Collaborative Cells for Personalized Human-Robot Collaborations", MDPI Applied Sciences, Vol. 12, Issue 14, 2022.
+
+### 2020
+
 - Umbrico A, Orlandini A., Cesta A., "An Ontology for Human-Robot Collaboration", Procedia CIRP, Vol. 93, pp. 1097-1102, 2020.
 
 
