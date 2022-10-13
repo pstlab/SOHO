@@ -1,5 +1,4 @@
-# SOHO
-Sharework Ontology for Human-Robot Collaboration
+# Sharework Ontology for Human-Robot Collaboration - SOHO
 
 This repository contains the core ontological model of SOHO  and the knowledge defined for the pilot use cases of the EU H2020 Sharework project. 
 
@@ -12,7 +11,7 @@ The repository thus contains the following folders:
 - the folder "intances" contains knowledge instances defined to evaluate the representation of the defined ontology;
 - the folder "rules" contains the inference rules supporting knowledge reasoning within the ROS module developed using Apache Jena.
 
-Please check the following repository for further details about the use of the developed resoning capabilities within ROS.
+Please check the following repository for further details about the use of SOHO within ROS.
 
 - Sharework Knowledge Module:     https://github.com/pstlab/sharework_knowledge.git
 - Sharework Task Planner Module:  https://github.com/pstlab/sharework_taskplanner.git 
