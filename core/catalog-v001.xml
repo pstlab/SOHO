@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.oclc.org/NET/ssnx/ssn" uri="https://www.w3.org/2005/Incubator/ssn/ssnx/ssn.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1658237115117" name="http://pst.istc.cnr.it/ontologies/2019/01/soho" uri="soho_core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1665695687651" name="http://pst.istc.cnr.it/ontologies/2019/01/soho" uri="soho_core.owl"/>
     </group>
 </catalog>
