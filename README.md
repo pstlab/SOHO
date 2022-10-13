@@ -1,4 +1,4 @@
-# Sharework Ontology for Human-Robot Collaboration - SOHO
+# SOHO - Sharework Ontology for Human-Robot Collaboration
 
 This repository contains the core ontological model of SOHO  and the knowledge defined for the pilot use cases of the EU H2020 Sharework project. 
 
