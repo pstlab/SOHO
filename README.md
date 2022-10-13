@@ -26,6 +26,8 @@ The repository thus contains the following folders:
 
 ## Other Resources
 
+### Projects using SOHO
+
 Please check the following repository for further details about the use of SOHO within ROS.
 
 - Sharework Knowledge Module:     https://github.com/pstlab/sharework_knowledge.git
