@@ -26,6 +26,10 @@ The repository thus contains the following folders:
 
 ## Other Resources
 
+A version of SOHO is available on the Industry Portal - Ontologies for Industry supported by H2020 OntoCommons project 
+
+- http://industryportal.enit.fr/ontologies/SOHO
+
 ### Projects using SOHO
 
 Please check the following repository for further details about the use of SOHO within ROS.
