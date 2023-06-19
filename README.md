@@ -2,7 +2,7 @@
 
 This repository contains the core ontological model of SOHO  and the knowledge defined for the pilot use cases of the EU H2020 Sharework project. 
 
-The OWL files have been defined using Protégé (they contain also SWRL inference rules) and support the realization of ROS-integrated 
+The OWL files have been defined using Protégé (they contain also SWRL-like inference rules) and support the realization of ROS-integrated 
 knowledge representation and reasoning services. Such services have been developed using the open-source Apache Jena library and ROSJava. 
 
 The repository thus contains the following folders: 
