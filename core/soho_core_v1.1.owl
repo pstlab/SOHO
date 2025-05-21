@@ -1,0 +1,3393 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://pst.istc.cnr.it/ontologies/2019/01/soho"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://pst.istc.cnr.it/ontologies/2019/01/soho"
+     versionIRI="http://pst.istc.cnr.it/ontologies/2019/01/soho/1.0.0">
+    <Prefix name="" IRI="http://pst.istc.cnr.it/ontologies/2019/01/soho"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="DUL" IRI="http://www.loa-cnr.it/ontologies/DUL.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="soho" IRI="http://pst.istc.cnr.it/ontologies/2019/01/soho#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://www.loa.istc.cnr.it/ontologies/DUL.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Domain Ontology for Advanced Industrial Manufacturing desgined with the H2020 research proejct Sharework</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#ActingCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionExecutionFailure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionExecutionResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityRecognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentEmbodimentProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentPerformanceProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentProfileProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentSocialProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArmTrajectoryExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttitudeToTechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Automated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutonomousAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutonomousRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AutonomyLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeatPerMinuteScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehaviorPreference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BinaryProductionLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CelsiusScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeMagnitude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeOver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CognitiveErgonomics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CognitiveProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CognitiveWorkload"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollaborativeProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompoundProductionGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompoundWorkPiece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConjunctiveComplexTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Convert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decrease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disassembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscreteSpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisjunctiveComplexTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emotional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enjoyment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExecutionNorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperienceWithRobots"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExpertiseLevelScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FahrenheitScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrequencyRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frustration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FullyAutonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoalOrdering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraspObjectCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRCTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HertzScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanBehaviorMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanBehaviorPerception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanMentalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanPhysicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Increase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Independent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentHRCTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inspection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractionModality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Join"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JointAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LikertScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManualGuidance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MentalStateEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoveObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoveObjectCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MulticapacityProductionLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NPointLikertScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectManipulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservableFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservableProductionFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservedHealthEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservedIntention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperativeConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParallelExecutionConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PathTrajectoryExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerceptionProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalErgonomics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalFatigue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalStrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysiologicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysiologicalStateEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PickObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PickPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceObjectCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrecedenceConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionActionRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionFailure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionNorm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionSpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QualitativeAmount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuantitativeAmount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Receive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reclassify"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Release"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoteControlled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotActingPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotAutonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotFunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotMotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotProfileProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RobotSensingPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SafetyAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saturation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemiAutonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Send"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensingCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sequential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SequentialHRCTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SharableProductionLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SharableSpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SharableSpatialLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimpleTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimpleWorkpiece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simultaneous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimultaneousHRCTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sleep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialGoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpatialLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stabilize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Store"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StowObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supportive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportiveHRCTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskAccuracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskExecutionPerformanceProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teleoperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unscrew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Usability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UseTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weld"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkPiece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkerBodyPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkerEmbodimentProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkerProfileProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkerSocialProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3PointLikertScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#5PointLikertScale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Output"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Action"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Method"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Norm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Object"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:PhysicalArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Process"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Region"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="DUL:SpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeAssignedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBePerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canPerform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#constrains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActuatingPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEffectOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmbodiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInitialSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObservableProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProductionSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResultingSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRobotPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensingPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTarget"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAlternativeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConstrainedGoal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConstrrainedTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirstGoal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirstTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFunctionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isObservableThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecondGoal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecondTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresEndLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresStartLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:describes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:hasSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:isQualityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="DUL:isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDurationUncertainty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFunctionParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGoal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaxSpaceCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinSpaceCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcedureDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcedureId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcedureName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcedureParameter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProductionSpaceRegionValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSpaceAvailabilityLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSurname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUncertainty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="DUL:hasRegionDataValue"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ObservableFeature"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ObservableProductionFeature"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ObservableFeature"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isObservableThrough"/>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="DUL:isRoleOf"/>
+                <Class IRI="#ProductionObject"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasObservableProperty"/>
+                <Class IRI="#ProductionProperty"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RobotInterface"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActingCapability"/>
+        <Class IRI="#AgentCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionExecutionFailure"/>
+        <Class IRI="#ProductionActionRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActionExecutionResult"/>
+        <Class IRI="#ProductionActionRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityRecognition"/>
+        <Class IRI="#SensingCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#WorkerProfileProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentCapability"/>
+        <Class IRI="#AgentEmbodimentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentCapability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
+            <Class IRI="#Capacity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentCapability"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isQualityOf"/>
+            <Class abbreviatedIRI="DUL:Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentEmbodimentProperty"/>
+        <Class IRI="#AgentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentPerformanceProperty"/>
+        <Class IRI="#AgentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentProfileProperty"/>
+        <Class IRI="#AgentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentProperty"/>
+        <Class abbreviatedIRI="DUL:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentSocialProperty"/>
+        <Class IRI="#AgentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArmTrajectoryExecution"/>
+        <Class IRI="#RobotMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assembly"/>
+        <Class IRI="#Join"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assembly"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresLocation"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attention"/>
+        <Class IRI="#CognitiveErgonomics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttitudeToTechnology"/>
+        <Class IRI="#WorkerSocialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Automated"/>
+        <Class IRI="#AutonomyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomousAgent"/>
+        <Class abbreviatedIRI="DUL:Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomousAgent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canPerform"/>
+            <Class IRI="#Function"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomousAgent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasId"/>
+            <Datatype abbreviatedIRI="xsd:long"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomousRobot"/>
+        <Class IRI="#AutonomousAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomousRobot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasRobotPart"/>
+            <Class IRI="#RobotInterface"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutonomyLevel"/>
+        <Class abbreviatedIRI="DUL:SocialObjectAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeatPerMinuteScale"/>
+        <Class IRI="#FrequencyRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorPreference"/>
+        <Class abbreviatedIRI="DUL:Norm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinaryProductionLocation"/>
+        <Class IRI="#SharableProductionLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodPressure"/>
+        <Class IRI="#PhysiologicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodyPosition"/>
+        <Class IRI="#HumanPhysicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodyTemperature"/>
+        <Class IRI="#PhysiologicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Branch"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Capacity"/>
+        <Class abbreviatedIRI="DUL:PhysicalAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CelsiusScale"/>
+        <Class IRI="#TemperatureRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeMagnitude"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeOver"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Channel"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cobot"/>
+        <Class IRI="#AutonomousRobot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cobot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapability"/>
+            <Class IRI="#AgentCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cobot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#RobotAutonomy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cobot"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasEmbodiment"/>
+            <Class IRI="#RobotInterface"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cobot"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CognitiveErgonomics"/>
+        <Class IRI="#HumanMentalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CognitiveProcess"/>
+        <Class abbreviatedIRI="DUL:Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CognitiveWorkload"/>
+        <Class IRI="#CognitiveErgonomics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollaborativeProcess"/>
+        <Class IRI="#ProductionProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollaborativeProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class IRI="#Cobot"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollaborativeProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class IRI="#WorkOperator"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collect"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexTask"/>
+        <Class IRI="#ProductionTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#OperativeConstraint"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexTask"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+            <ObjectUnionOf>
+                <Class IRI="#ComplexTask"/>
+                <Class IRI="#SimpleTask"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompoundProductionGoal"/>
+        <Class IRI="#SocialGoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompoundProductionGoal"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+            <Class IRI="#ProductionGoal"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompoundWorkPiece"/>
+        <Class IRI="#WorkPiece"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompoundWorkPiece"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConjunctiveComplexTask"/>
+        <Class IRI="#ComplexTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Convert"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decrease"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disassembly"/>
+        <Class IRI="#Branch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disassembly"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresLocation"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiscreteSpaceRegion"/>
+        <Class IRI="#ProductionSpaceRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisjunctiveComplexTask"/>
+        <Class IRI="#ComplexTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emotional"/>
+        <Class IRI="#CognitiveErgonomics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Enjoyment"/>
+        <Class IRI="#Emotional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentProperty"/>
+        <Class IRI="#ProductionProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentRelatedEvent"/>
+        <Class IRI="#ObservedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExecutionNorm"/>
+        <Class abbreviatedIRI="DUL:Norm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experience"/>
+        <Class IRI="#WorkerProfileProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experience"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
+            <Class IRI="#ExpertiseLevelScale"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperienceWithRobots"/>
+        <Class IRI="#WorkerSocialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExpertiseLevelScale"/>
+        <Class IRI="#QualitativeAmount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FahrenheitScale"/>
+        <Class IRI="#TemperatureRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrequencyRegion"/>
+        <Class IRI="#QuantitativeAmount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frustration"/>
+        <Class IRI="#Emotional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FullyAutonomy"/>
+        <Class IRI="#AutonomyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#ProductionTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEffectOn"/>
+            <Class abbreviatedIRI="DUL:Quality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requires"/>
+            <Class IRI="#ProductionObject"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#canBePerformedBy"/>
+            <Class abbreviatedIRI="DUL:Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTarget"/>
+            <Class IRI="#ProductionObject"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresCapability"/>
+            <Class IRI="#AgentCapability"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasProcedureDescription"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasProcedureName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasDuration"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasDurationUncertainty"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasProcedureId"/>
+            <Datatype abbreviatedIRI="xsd:long"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#WorkerProfileProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoalOrdering"/>
+        <Class IRI="#BehaviorPreference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraspObjectCapability"/>
+        <Class IRI="#ActingCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRCTask"/>
+        <Class IRI="#SimpleTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRCTask"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#InteractionModality"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HertzScale"/>
+        <Class IRI="#FrequencyRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#AutonomousAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#canPerform"/>
+            <Class IRI="#Function"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasId"/>
+            <Datatype abbreviatedIRI="xsd:long"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSurname"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanAction"/>
+        <Class IRI="#ProductionAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class IRI="#WorkOperator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanAction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+            <Class IRI="#HumanFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanBehaviorMonitoring"/>
+        <Class IRI="#PerceptionProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanBehaviorMonitoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+            <Class IRI="#ObservedHealthEvent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanBehaviorPerception"/>
+        <Class IRI="#PerceptionProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanBehaviorPerception"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+            <Class IRI="#ObservedIntention"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanFunction"/>
+        <Class IRI="#ProductionTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanFunction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePerformedBy"/>
+            <Class IRI="#Human"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanMentalProperty"/>
+        <Class IRI="#WorkerEmbodimentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanPhysicalProperty"/>
+        <Class IRI="#WorkerEmbodimentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanRelatedEvent"/>
+        <Class IRI="#ObservedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Increase"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Independent"/>
+        <Class IRI="#InteractionModality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Independent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <ObjectUnionOf>
+                <Class IRI="#HumanFunction"/>
+                <Class IRI="#RobotFunction"/>
+            </ObjectUnionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Independent"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:describes"/>
+            <Class IRI="#HRCTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentHRCTask"/>
+        <Class IRI="#HRCTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentHRCTask"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#Independent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inspection"/>
+        <Class IRI="#Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractionModality"/>
+        <Class IRI="#ProductionNorm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractionModality"/>
+        <ObjectMaxCardinality cardinality="2">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#Function"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Join"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JointAction"/>
+        <Class IRI="#ProductionAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JointAction"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+                <Class IRI="#HumanAction"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+                <Class IRI="#RobotAction"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LikertScale"/>
+        <Class IRI="#QualitativeAmount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="#ProductionObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManualGuidance"/>
+        <Class IRI="#ChangeOver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MentalStateEvent"/>
+        <Class IRI="#ObservedHealthEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motion"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveObject"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveObjectCapability"/>
+        <Class IRI="#ActingCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MulticapacityProductionLocation"/>
+        <Class IRI="#SharableProductionLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NPointLikertScale"/>
+        <Class IRI="#LikertScale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectDetection"/>
+        <Class IRI="#SensingCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectManipulation"/>
+        <Class IRI="#RobotAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectProperty"/>
+        <Class IRI="#ProductionProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableFeature"/>
+        <Class abbreviatedIRI="DUL:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableFeature"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isObservableThrough"/>
+                <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableFeature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isRoleOf"/>
+            <Class abbreviatedIRI="DUL:Object"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableFeature"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasObservableProperty"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservedEvent"/>
+        <Class abbreviatedIRI="DUL:Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservedEvent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservedHealthEvent"/>
+        <Class IRI="#HumanRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservedIntention"/>
+        <Class IRI="#HumanRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperativeConstraint"/>
+        <Class IRI="#ProductionNorm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperativeConstraint"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#ProductionTask"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParallelExecutionConstraint"/>
+        <Class IRI="#OperativeConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PathTrajectoryExecution"/>
+        <Class IRI="#RobotMotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionProcess"/>
+        <Class IRI="#CognitiveProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasInput"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PerceptionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#hasOutput"/>
+            <Class IRI="#ObservedEvent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalErgonomics"/>
+        <Class IRI="#HumanPhysicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalFatigue"/>
+        <Class IRI="#PhysicalErgonomics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalStrain"/>
+        <Class IRI="#PhysicalErgonomics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysiologicalProperty"/>
+        <Class IRI="#HumanPhysicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysiologicalStateEvent"/>
+        <Class IRI="#ObservedHealthEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickObject"/>
+        <Class IRI="#Collect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEffectOn"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requiresCapability"/>
+            <Class IRI="#MoveObjectCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickObject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresLocation"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickPlace"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickPlace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEffectOn"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickPlace"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresCapability"/>
+            <Class IRI="#MoveObjectCapability"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickPlace"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresEndLocation"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickPlace"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresStartLocation"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceObject"/>
+        <Class IRI="#Release"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEffectOn"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#requiresCapability"/>
+            <Class IRI="#MoveObjectCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceObject"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#requiresLocation"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceObjectCapability"/>
+        <Class IRI="#ActingCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Posture"/>
+        <Class IRI="#PhysicalErgonomics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecedenceConstraint"/>
+        <Class IRI="#OperativeConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecedenceConstraint"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isFirstTask"/>
+            <Class IRI="#ProductionTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecedenceConstraint"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isSecondTask"/>
+            <Class IRI="#ProductionTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionAction"/>
+        <Class abbreviatedIRI="DUL:Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+            <Class IRI="#ProductionRelatedEvent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class IRI="#ProductionObject"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class abbreviatedIRI="DUL:Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#InteractionModality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionAction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#ProductionTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionActionRelatedEvent"/>
+        <Class IRI="#ProductionRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionError"/>
+        <Class IRI="#ProductionRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionFailure"/>
+        <Class IRI="#ProductionRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionGoal"/>
+        <Class IRI="#SocialGoal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionGoal"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+            <Class IRI="#ProductionMethod"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionLocation"/>
+        <Class IRI="#ProductionObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+            <Class IRI="#ProductionLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionMethod"/>
+        <Class abbreviatedIRI="DUL:Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionNorm"/>
+        <Class IRI="#ExecutionNorm"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionNorm"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#ProductionTask"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionNorm"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:describes"/>
+            <Class IRI="#ProductionTask"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionObject"/>
+        <Class abbreviatedIRI="DUL:PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#ObjectProperty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionObject"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasLabel"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionPlan"/>
+        <Class abbreviatedIRI="DUL:Plan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionPlan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:describes"/>
+            <Class IRI="#ProductionProcess"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionPlan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasComponent"/>
+            <Class IRI="#ProductionGoal"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionPlan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#ProductionMethod"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionProcess"/>
+        <Class abbreviatedIRI="DUL:Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+            <Class IRI="#ProductionAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+            <Class IRI="#ProductionRelatedEvent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class abbreviatedIRI="DUL:Agent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#ProductionPlan"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionProperty"/>
+        <Class abbreviatedIRI="DUL:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionRelatedEvent"/>
+        <Class IRI="#ObservedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionRelatedEvent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+            <Class IRI="#ProductionAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionResource"/>
+        <Class abbreviatedIRI="DUL:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionResource"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isRoleOf"/>
+            <Class IRI="#ProductionObject"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionResult"/>
+        <Class IRI="#ProductionRelatedEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionSpaceRegion"/>
+        <Class abbreviatedIRI="DUL:SpaceRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionTask"/>
+        <Class IRI="#ProductionMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#ProductionNorm"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QualitativeAmount"/>
+        <Class abbreviatedIRI="DUL:Amount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuantitativeAmount"/>
+        <Class abbreviatedIRI="DUL:Amount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Receive"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reclassify"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Release"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteControlled"/>
+        <Class IRI="#AutonomyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskLevel"/>
+        <Class IRI="#SafetyAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotActingPart"/>
+        <Class abbreviatedIRI="DUL:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotActingPart"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isRoleOf"/>
+            <Class IRI="#RobotInterface"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotAction"/>
+        <Class IRI="#ProductionAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotAction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasParticipant"/>
+            <Class IRI="#AutonomousRobot"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotAction"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.oclc.org/NET/ssnx/ssn#implements"/>
+            <Class IRI="#RobotFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotAutonomy"/>
+        <Class IRI="#RobotProfileProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotAutonomy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
+            <Class IRI="#AutonomyLevel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotFunction"/>
+        <Class IRI="#ProductionTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotFunction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#canBePerformedBy"/>
+            <Class IRI="#Cobot"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotInterface"/>
+        <Class IRI="#ProductionObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotInterface"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapability"/>
+            <Class IRI="#AgentCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotMotion"/>
+        <Class IRI="#RobotAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotProfileProperty"/>
+        <Class IRI="#AgentProfileProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotSensingPart"/>
+        <Class abbreviatedIRI="DUL:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RobotSensingPart"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isRoleOf"/>
+            <Class IRI="#RobotInterface"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SafetyAttribute"/>
+        <Class abbreviatedIRI="DUL:SocialObjectAttribute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saturation"/>
+        <Class IRI="#PhysiologicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schedule"/>
+        <Class abbreviatedIRI="DUL:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Screw"/>
+        <Class IRI="#Join"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemiAutonomy"/>
+        <Class IRI="#AutonomyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Send"/>
+        <Class IRI="#Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sense"/>
+        <Class IRI="#Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensingCapability"/>
+        <Class IRI="#AgentCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sequential"/>
+        <Class IRI="#InteractionModality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sequential"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#HumanFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sequential"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#RobotFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sequential"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:describes"/>
+            <Class IRI="#HRCTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequentialHRCTask"/>
+        <Class IRI="#HRCTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SequentialHRCTask"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#Sequential"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableProductionLocation"/>
+        <Class IRI="#ProductionLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableProductionLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#SharableSpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableProductionLocation"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasMaxSpaceCapacity"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableProductionLocation"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasMinSpaceCapacity"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableSpaceRegion"/>
+        <Class IRI="#DiscreteSpaceRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableSpaceRegion"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasCoordinate"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableSpaceRegion"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSpaceAvailabilityLevel"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableSpatialLocation"/>
+        <Class IRI="#SpatialLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharableSpatialLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
+            <Class IRI="#SharableSpaceRegion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleTask"/>
+        <Class IRI="#ProductionTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+            <Class IRI="#SimpleWorkpiece"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleTask"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#InteractionModality"/>
+                <Class IRI="#OperativeConstraint"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleTask"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:hasConstituent"/>
+            <Class IRI="#Function"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleWorkpiece"/>
+        <Class IRI="#WorkPiece"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimpleWorkpiece"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simultaneous"/>
+        <Class IRI="#InteractionModality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simultaneous"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#HumanFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simultaneous"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#RobotFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simultaneous"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:describes"/>
+            <Class IRI="#HRCTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simultaneous"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#PrecedenceConstraint"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimultaneousHRCTask"/>
+        <Class IRI="#HRCTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimultaneousHRCTask"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#Simultaneous"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sleep"/>
+        <Class IRI="#PhysiologicalProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialGoal"/>
+        <Class abbreviatedIRI="DUL:Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpatialLocation"/>
+        <Class IRI="#ObjectProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpatialLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasRegion"/>
+            <Class IRI="#DiscreteSpaceRegion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stabilize"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Store"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StowObject"/>
+        <Class IRI="#Store"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress"/>
+        <Class IRI="#Emotional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supportive"/>
+        <Class IRI="#InteractionModality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supportive"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#HumanFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supportive"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#constrains"/>
+            <Class IRI="#RobotFunction"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supportive"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:describes"/>
+            <Class IRI="#HRCTask"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportiveHRCTask"/>
+        <Class IRI="#HRCTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportiveHRCTask"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="DUL:isDescribedBy"/>
+            <Class IRI="#Supportive"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskAccuracy"/>
+        <Class IRI="#TaskExecutionPerformanceProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskEfficiency"/>
+        <Class IRI="#TaskExecutionPerformanceProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskExecutionPerformanceProperty"/>
+        <Class IRI="#AgentPerformanceProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teleoperation"/>
+        <Class IRI="#AutonomyLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureRegion"/>
+        <Class IRI="#QuantitativeAmount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <Class IRI="#ProductionObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trust"/>
+        <Class IRI="#WorkerSocialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unscrew"/>
+        <Class IRI="#Branch"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Usability"/>
+        <Class IRI="#WorkerSocialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UseTool"/>
+        <Class IRI="#ActingCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weld"/>
+        <Class IRI="#Join"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOperator"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOperator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCapability"/>
+            <Class IRI="#AgentCapability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOperator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEmbodiment"/>
+            <Class IRI="#WorkerBodyPart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOperator"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOperator"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSurname"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkPiece"/>
+        <Class IRI="#ProductionObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkPiece"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+            <Class IRI="#SpatialLocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerBodyPart"/>
+        <Class IRI="#ProductionObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerBodyPart"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+            <Class IRI="#WorkerBodyPart"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerEmbodimentProperty"/>
+        <Class IRI="#AgentEmbodimentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerProfileProperty"/>
+        <Class IRI="#AgentProfileProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerSocialProperty"/>
+        <Class IRI="#AgentSocialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3PointLikertScale"/>
+        <Class IRI="#LikertScale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#5PointLikertScale"/>
+        <Class IRI="#LikertScale"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BloodPressure"/>
+        <Class IRI="#BodyTemperature"/>
+        <Class IRI="#Saturation"/>
+        <Class IRI="#Sleep"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CompoundWorkPiece"/>
+        <Class IRI="#SimpleWorkpiece"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActuatingPart"/>
+        <ObjectProperty IRI="#hasRobotPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCapability"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasQuality"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInitialSetting"/>
+        <ObjectProperty IRI="#hasProductionSetting"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProductionSetting"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasSetting"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResultingSetting"/>
+        <ObjectProperty IRI="#hasProductionSetting"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRobotPart"/>
+        <ObjectProperty abbreviatedIRI="DUL:hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSensingPart"/>
+        <ObjectProperty IRI="#hasRobotPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAlternativeOf"/>
+        <ObjectProperty abbreviatedIRI="DUL:associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFirstGoal"/>
+        <ObjectProperty IRI="#isConstrainedGoal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFirstTask"/>
+        <ObjectProperty IRI="#isConstrrainedTask"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSecondGoal"/>
+        <ObjectProperty IRI="#isConstrainedGoal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSecondTask"/>
+        <ObjectProperty IRI="#isConstrrainedTask"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <ObjectProperty IRI="#requires"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresEndLocation"/>
+        <ObjectProperty IRI="#requiresLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresLocation"/>
+        <ObjectProperty IRI="#requires"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresResource"/>
+        <ObjectProperty IRI="#requires"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresStartLocation"/>
+        <ObjectProperty IRI="#requiresLocation"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#canBePerformedBy"/>
+        <ObjectProperty IRI="#canPerform"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#constrains"/>
+        <ObjectProperty IRI="#isConstrrainedTask"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#requiresEndLocation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#requiresStartLocation"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#canPerform"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasRobotPart"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canBeAssignedTo"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canPerform"/>
+        <Class abbreviatedIRI="DUL:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#constrains"/>
+        <Class IRI="#ProductionNorm"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActuatingPart"/>
+        <Class IRI="#RobotInterface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class abbreviatedIRI="DUL:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmbodiment"/>
+        <Class IRI="#AutonomousAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObservableProperty"/>
+        <Class IRI="#ObservableFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRobotPart"/>
+        <Class IRI="#RobotInterface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensingPart"/>
+        <Class IRI="#RobotInterface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isConstrainedGoal"/>
+        <Class IRI="#BehaviorPreference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFirstGoal"/>
+        <Class IRI="#BehaviorPreference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFirstTask"/>
+        <Class IRI="#PrecedenceConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isObservableThrough"/>
+        <Class IRI="#ObservableFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSecondGoal"/>
+        <Class IRI="#BehaviorPreference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSecondTask"/>
+        <Class IRI="#PrecedenceConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canBeAssignedTo"/>
+        <Class abbreviatedIRI="DUL:Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canPerform"/>
+        <Class IRI="#Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#constrains"/>
+        <Class abbreviatedIRI="DUL:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActuatingPart"/>
+        <Class IRI="#RobotInterface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class IRI="#AgentCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEmbodiment"/>
+        <Class abbreviatedIRI="DUL:PhysicalObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObservableProperty"/>
+        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRobotPart"/>
+        <Class IRI="#RobotInterface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensingPart"/>
+        <Class IRI="#RobotInterface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTarget"/>
+        <Class IRI="#ProductionObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConstrainedGoal"/>
+        <Class IRI="#BehaviorPreference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isConstrrainedTask"/>
+        <Class IRI="#ProductionNorm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFirstGoal"/>
+        <Class IRI="#ProductionGoal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFirstTask"/>
+        <Class IRI="#ProductionTask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isObservableThrough"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+            <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSecondGoal"/>
+        <Class IRI="#ProductionGoal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSecondTask"/>
+        <Class IRI="#ProductionTask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresCapability"/>
+        <Class IRI="#AgentCapability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresEndLocation"/>
+        <Class IRI="#ProductionLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresLocation"/>
+        <Class IRI="#ProductionLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresResource"/>
+        <ObjectUnionOf>
+            <Class IRI="#ProductionResource"/>
+            <Class IRI="#WorkPiece"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresStartLocation"/>
+        <Class IRI="#ProductionLocation"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCoordinate"/>
+        <DataProperty IRI="#hasProductionSpaceRegionValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDuration"/>
+        <DataProperty IRI="#hasProcedureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDurationUncertainty"/>
+        <DataProperty IRI="#hasUncertainty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasGoal"/>
+        <DataProperty IRI="#hasProcedureParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProcedureDescription"/>
+        <DataProperty IRI="#hasFunctionParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProcedureId"/>
+        <DataProperty IRI="#hasFunctionParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProcedureName"/>
+        <DataProperty IRI="#hasFunctionParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProcedureParameter"/>
+        <DataProperty IRI="#hasFunctionParameter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasProductionSpaceRegionValue"/>
+        <DataProperty abbreviatedIRI="DUL:hasRegionDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSpaceAvailabilityLevel"/>
+        <DataProperty IRI="#hasProductionSpaceRegionValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasUncertainty"/>
+        <DataProperty IRI="#hasProcedureParameter"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDurationUncertainty"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasId"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLabel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasProcedureId"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasProcedureName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSpaceAvailabilityLevel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasUncertainty"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDuration"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDurationUncertainty"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFunctionParameter"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGoal"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLabel"/>
+        <Class IRI="#ProductionObject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMaxSpaceCapacity"/>
+        <Class IRI="#SharableProductionLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMinSpaceCapacity"/>
+        <Class IRI="#SharableProductionLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcedureDescription"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcedureId"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcedureName"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcedureParameter"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProductionSpaceRegionValue"/>
+        <Class IRI="#SharableSpaceRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSpaceAvailabilityLevel"/>
+        <Class IRI="#SharableSpaceRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSurname"/>
+        <Class IRI="#Human"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasUncertainty"/>
+        <Class IRI="#Function"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCoordinate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDuration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDurationUncertainty"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGoal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasId"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLabel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMaxSpaceCapacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMinSpaceCapacity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcedureDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcedureId"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcedureName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSpaceAvailabilityLevel"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSurname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A semantic rule characterizing actuating parts of a robot</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Cobot"/>
+                <Variable IRI="#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRobotPart"/>
+                <Variable IRI="#r"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCapability"/>
+                <Variable IRI="#i"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RobotInterface"/>
+                <Variable IRI="#i"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ActingCapability"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasActuatingPart"/>
+                <Variable IRI="#r"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A semantic rule characterizing the capabilities a task requires according to the capabilities of its functions</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S6</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#AgentCapability"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Function"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#requires"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SimpleTask"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#requires"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A semantic rule characterizing sensing parts of a robot</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Cobot"/>
+                <Variable IRI="#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRobotPart"/>
+                <Variable IRI="#r"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCapability"/>
+                <Variable IRI="#i"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SensingCapability"/>
+                <Variable IRI="#c"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RobotInterface"/>
+                <Variable IRI="#i"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSensingPart"/>
+                <Variable IRI="#r"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A semantic rule characterizing the capabilities of a robot in terms of the capabilities of its parts</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Cobot"/>
+                <Variable IRI="#r"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#RobotInterface"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRobotPart"/>
+                <Variable IRI="#r"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCapability"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCapability"/>
+                <Variable IRI="#r"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A semantic rule characterizing the functions an agent can perform according to its capabilities</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="DUL:Agent"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCapability"/>
+                <Variable IRI="#a"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#requires"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#c"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Function"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canPerform"/>
+                <Variable IRI="#a"/>
+                <Variable IRI="#f"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>A semantic rule characterizing the tasks that can be assigned to an agent, according to the functions the agent can perform</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="DUL:Agent"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canPerform"/>
+                <Variable IRI="#a"/>
+                <Variable IRI="#f"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#requires"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#f"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#SimpleTask"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#canBeAssignedTo"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#a"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483773"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483774"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483775"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483776"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483777"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483778"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483779"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483780"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483781"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483782"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483783"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483784"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483785"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483786"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483787"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483788"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483789"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483790"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483791"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483792"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483793"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483794"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483795"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483796"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483797"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:qualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483798"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483799"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:maxQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483800"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:minQualifiedCardinality"/>
+        <AnonymousIndividual nodeID="_:genid2147483801"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
