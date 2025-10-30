@@ -11,6 +11,16 @@ The repository thus contains the following folders:
 - the folder "intances" contains knowledge instances defined to evaluate the representation of the defined ontology;
 - the folder "rules" contains the inference rules supporting knowledge reasoning within the ROS module developed using Apache Jena.
 
+## Import the Ontology
+
+You can import and extend the SOHO ontology within your ontological model. To do so, please consider the URL below representing the link to the raw OWL file stored in the GitHub repository.
+
+```
+https://raw.githubusercontent.com/pstlab/SOHO/main/core/soho_core_v1.1.owl
+```
+
+You can use the link within Protege to import the model from the web and then use/extend it within your own ontological model.
+
 ## Publications
 
 ### 2023
